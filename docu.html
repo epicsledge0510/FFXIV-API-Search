@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Inline template test</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@400;500&family=Pathway+Gothic+One&display=swap"
+        rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@xivapi/vue-xivtooltips/dist/vue-xivtooltips.min.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.6.0/webcomponents-loader.min.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+
+<body>
+
+    <!-- .hero -->
+    <section class="hero has-background-black">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <a href="index.html">
+                            <p class="navbar-item">Home</p>
+
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="app.html">
+                            <p class="navbar-item">Search</p>
+
+                        </a>
+                    </div>
+                    <img src="images/xiv_meteor.png" alt="Final Fantasy XIV Logo" style="width: 50px; height: 50px;">
+                    <div class="column">
+                        <a href="favorites.html">
+                            <p class="navbar-item">Favorites</p>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="docu.html">
+                            <p class="navbar-item" style="color: red;">Documentation</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.hero -->
+
+    <!-- /.section -->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="notification">
+                        <h1>Introduction</h1>
+                        The purpose of this webpage is to allow players of Final Fantasy XIV to search the game's database so that they can find basic information on different parts of the game.
+                        This could range from items, to enemies, to player moves, the reason why a simple search is important is due to the eubiquity of many of the images. 
+                        Regardless of what language you are playing in, the icons for these aspects are all the same, allowing the user of this app to look for the image if needed. 
+                        They also have the ability to save to favorites so they can add their preference to the cloud to display for others.
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="notification">
+                            <h1>CSS Framework</h1>
+                            CSS Framework provided by Bulma (https://bulma.io/), icons provided by Square Enix CO. LTD.
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="notification">
+                        <p></p>
+                            <h1>API Information</h1>
+                            Final Fantasy XIV API website: https://xivapi.com/, full documentation: https://xivapi.com/docs
+                            <br>
+                            This API keeps track of all of the entities that currently exist within the game of Final Fantasy XIV, which was created by Square Enix
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="notification">
+                        <p></p>
+                            <h1>Functions</h1>
+                            <h2>loadJsonFetch()</h2>
+                            This function loads information from the FFXIV API when the user searches for something then displays it on screen 
+                            <h2>saveData()</h2>
+                            This function saves the results that have been clicked to local storage so that they can be seen later
+                            <h2>clearData()</h2>
+                            This function clears the local storage and favorites screen
+                            <h2>loadData()</h2>
+                            This function reads the local storage and then displays the favorites on the favorites page
+                            <h2>downloadFaves()</h2>
+                            This function reads the linked Firebase databsese and displays favorites from teh page with the amount of likes that have been accumulated on the favorites page
+                            <h2>writeFavNameData()</h2>
+                            This function updates the Firebase database so that new functions can be added, and if something is present, the like count is updated
+                            <h2>exportDownFaves()</h2>
+                            This function helps run downloadFaves()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
